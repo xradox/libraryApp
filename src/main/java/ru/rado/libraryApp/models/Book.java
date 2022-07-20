@@ -23,7 +23,7 @@ public class Book {
     private String author;
 
     @Column(name = "year")
-    @Min(value = 0, message = "Год должен быть боьше 0, и не больше текущего года")
+    @Min(value = 0, message = "Год должен быть больше 0, и не больше текущего года")
     @Max(value = 2022, message = "Год должен быть больше 0, и не больше текущего года")
     private int year;
 

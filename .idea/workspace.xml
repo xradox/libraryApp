@@ -9,33 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bb879c6-d3e7-49ce-aa8b-35b0b5911d62" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/repositories/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4cf4e15d-f14b-4a41-ad73-12e1cbc035c0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4cf4e15d-f14b-4a41-ad73-12e1cbc035c0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/868164dc-c43c-49ad-8b95-4a246c5f5424.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/868164dc-c43c-49ad-8b95-4a246c5f5424/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/868164dc-c43c-49ad-8b95-4a246c5f5424/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/868164dc-c43c-49ad-8b95-4a246c5f5424/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/868164dc-c43c-49ad-8b95-4a246c5f5424/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93634c62-a190-4449-aa28-8592eff4ca64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93634c62-a190-4449-aa28-8592eff4ca64/storage_v2/_src_/database/library.uyToCQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93634c62-a190-4449-aa28-8592eff4ca64/storage_v2/_src_/database/library.uyToCQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93634c62-a190-4449-aa28-8592eff4ca64/storage_v2/_src_/database/library.uyToCQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93634c62-a190-4449-aa28-8592eff4ca64/storage_v2/_src_/database/library.uyToCQ/schema/public.abK9xQ.meta" beforeDir="false" />
+    <list default="true" id="6bb879c6-d3e7-49ce-aa8b-35b0b5911d62" name="Changes" comment="Add Spring Data JPA support">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/controllers/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/controllers/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/models/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rado/libraryApp/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +177,7 @@
       <updated>1656008935337</updated>
       <workItem from="1656008936784" duration="50984000" />
       <workItem from="1658172329613" duration="45000" />
-      <workItem from="1658340911472" duration="8252000" />
+      <workItem from="1658340911472" duration="9116000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1656878551557</created>
@@ -216,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656878739126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Spring Data JPA support">
+      <created>1658350696436</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658350696436</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +219,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Add Spring Data JPA support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Spring Data JPA support" />
   </component>
 </project>
