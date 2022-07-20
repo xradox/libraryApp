@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import ru.rado.libraryApp.models.Person;
 
 import java.util.List;
-
+@Deprecated
 @Component
 public class PersonDAO {
 

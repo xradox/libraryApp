@@ -4,26 +4,23 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.rado.libraryApp.dao.BookDAO;
-import ru.rado.libraryApp.dao.PersonDAO;
 import ru.rado.libraryApp.models.Person;
+import ru.rado.libraryApp.repositories.PersonRepository;
 
 import javax.validation.Valid;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/people")
 public class PersonController {
+    private final PersonRepository personRepository;
 
-    private final PersonDAO personDAO;
-    private final BookDAO bookDAO;
-
-    public PersonController(PersonDAO personDAO, BookDAO bookDAO) {
-        this.personDAO = personDAO;
-        this.bookDAO = bookDAO;
+    public PersonController(PersonRepository personRepository) {
+        this.personRepository = personRepository;
     }
     @GetMapping
     public String index(Model model){
-        model.addAttribute("people", personDAO.index());
+        model.addAttribute("people", personRepository.findAll());
         return "person/index";
     }
     @GetMapping("/new")
@@ -32,8 +29,11 @@ public class PersonController {
     }
     @GetMapping("/{id}")
     public String userPage(@PathVariable int id, Model model){
-        model.addAttribute("person", personDAO.showUser(id));
-        model.addAttribute("books", bookDAO.getBooksForPerson(id));
+        Optional<Person> person = personRepository.findById(id);
+        if(person.isPresent()){
+            model.addAttribute("person", person.get());
+            model.addAttribute("books", person.get().getBooks());
+        }
         return "person/user_page";
     }
     @PostMapping()
@@ -41,26 +41,27 @@ public class PersonController {
         if(bindingResult.hasErrors()){
             return "person/new";
         }
-        personDAO.add(person);
+        personRepository.save(person);
         return "redirect:/people";
     }
     @GetMapping("/{id}/edit")
     public String editUser(@PathVariable int id, Model model){
-        model.addAttribute("person", personDAO.showUser(id));
+        Optional<Person> person = personRepository.findById(id);
+        person.ifPresent(value -> model.addAttribute("person", value));
         return "person/edit";
     }
     @PatchMapping("/{id}")
-    public String updateUser(@PathVariable int id, @Valid Person updatedPerson,
+    public String updateUser(@Valid Person updatedPerson,
                              BindingResult bindingResult){
         if(bindingResult.hasErrors()){
             return "person/edit";
         }
-        personDAO.updateUser(id, updatedPerson);
+        personRepository.save(updatedPerson);
         return "redirect:/people";
     }
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable int id){
-        personDAO.deleteUser(id);
+        personRepository.deleteById(id);
         return "redirect:/people";
     }
 }
